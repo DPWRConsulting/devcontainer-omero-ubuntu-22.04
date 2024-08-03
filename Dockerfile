@@ -9,7 +9,6 @@ LABEL org.opencontainers.image.authors="Douglas Russell <root@dpwrussell.com>" \
       org.opencontainers.image.description="An OMERO Server Docker image for use with VS Code's Remote Containers extension or GitHub codespaces."
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
-    openjdk-11-jre \
     db5.3-util \
     bzip2 \
     libdb++ \
