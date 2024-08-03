@@ -53,5 +53,6 @@ jobs:
         with:
           username: ${{ vars.DOCKERHUB_RW_USER }}
           password: ${{ secrets.DOCKERHUB_RW_TOKEN }}
+          repository: ${{ vars.DOCKERHUB_RW_USER }}/${{ github.event.repository.name }}
           short-description: ${{ github.event.repository.description }}
       - uses: gautamkrishnar/keepalive-workflow@v2
