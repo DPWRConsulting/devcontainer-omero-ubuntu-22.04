@@ -1,6 +1,6 @@
 {
-	"name": "OMERO Dev Container",
-	"image": "dpwrussell/devcontainer-omero:0-ubuntu-22.04",
+	"name": "OMERO Server Dev Container",
+	"image": "dpwrussell/devcontainer-omeroserver:0-ubuntu-22.04",
 	"forwardPorts": [4063, 4064],
 	"remoteUser": "vscode",
 	"features": {

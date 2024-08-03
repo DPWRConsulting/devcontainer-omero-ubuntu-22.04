@@ -1,12 +1,12 @@
-# docker build -t devcontainer-omero-ubuntu-22.04 . --build-arg dev-ubuntu
+# docker build -t devcontainer-omeroserver-ubuntu-22.04 . --build-arg dev-ubuntu
 
 ARG VARIANT="0-ubuntu-22.04"
 FROM mcr.microsoft.com/vscode/devcontainers/base:${VARIANT}
 LABEL org.opencontainers.image.authors="Douglas Russell <root@dpwrussell.com>" \
-      org.opencontainers.image.source=https://github.com/dpwrconsulting/devcontainer-omero-ubuntu-22.04 \
+      org.opencontainers.image.source=https://github.com/dpwrconsulting/devcontainer-omeroserver \
       org.opencontainers.image.licenses="MIT" \
-      org.opencontainers.image.title="OMERO Devcontainer Image" \
-      org.opencontainers.image.description="An OMERO Docker image for use with VS Code's Remote Containers extension or GitHub codespaces."
+      org.opencontainers.image.title="OMERO Server Devcontainer Image" \
+      org.opencontainers.image.description="An OMERO Server Docker image for use with VS Code's Remote Containers extension or GitHub codespaces."
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
     openjdk-11-jre \

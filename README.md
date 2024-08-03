@@ -1,1 +1,1 @@
-# Devcontainer for OMERO Development
+# Devcontainer for OMERO Server Development
