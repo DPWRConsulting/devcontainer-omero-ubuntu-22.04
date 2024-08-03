@@ -1,0 +1,11 @@
+{
+	"name": "OMERO Dev Container",
+	"image": "dpwrussell/devcontainer-omero:0-ubuntu-22.04",
+	"forwardPorts": [4063, 4064],
+	"remoteUser": "vscode",
+	"features": {
+		"ghcr.io/devcontainers/features/sshd:1": {
+			"version": "latest"
+		}
+	}
+}
