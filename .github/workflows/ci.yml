@@ -45,7 +45,7 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: ${{ github.event.repository.full_name }}:${{ matrix.variant }}
+          tags: ${{ vars.DOCKERHUB_RW_USER }}/${{ github.event.repository.name }}:${{ matrix.variant }}
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Update repo description
